@@ -1,0 +1,38 @@
+h1{
+font-size:60px;
+color:	#00bfff;
+}
+body{
+ background-color:lightblue;
+ color: white;
+font-family:"Times New Roman";
+font-size:20px;
+}
+
+h2{color:#00bfff;}
+
+.behav{
+ color:yellow;
+}
+
+ol { list-style-type: decimal; }
+
+em.movie{
+color:red;
+}
+
+li{
+    background-color:#8c7373;
+}
+strong{
+    color:yellow;
+    font-size: 14px;
+}
+a{
+    color:#FF0000;
+    text-decoration: unset;
+}
+
+a:hover{
+    text-decoration: underline;
+}
