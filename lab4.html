@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+ <link href="lab4.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="headrow"><span class="headtext">Task List</span></div>
+
+<div class="form">
+<form action="" method="GET">
+
+    <div class="topmargin"><label> Task</label></div>
+    <div class="input1"><input type="text" name="task" placeholder="Enter the task"
+    size="30px"/></div>
+
+    <div class="topmargin"><label > Required By</label></div>
+    <div class="input1"><input type="date" name="date" /></div>
+
+
+    <div class="topmargin"><label > Category</label></div>
+    <div class="topmargin"><select name="taskcategory" id="cat">
+        <option selected>personal</option>
+        <option>spritual</option>
+        <option>comunity</option>
+        <option>Social</option>
+    </select>
+    </div>
+ <div class ="button"><input type="submit" value="Save Task"/>
+     <input type="submit" value="Clear Task"/>
+ </div>
+   <div class="topmargin">
+    <table class="tab">
+        <tr class="row1">
+            <th>Name</th>
+            <th>Due</th>
+            <th>Category</th>
+        </tr>
+        <tr>
+            <td>Return Library books</td>
+            <td>2013-10-14</td>
+            <td>personal</td>
+        </tr>
+        <tr>
+            <td>Perform Project demo to stakeholders</td>
+            <td>2013-10-14</td>
+            <td>work</td>
+        </tr>
+
+        <tr>
+            <td>Meet friends for dinner</td>
+            <td>2013-10-14</td>
+            <td>personal</td>
+        </tr>
+    </table>
+
+   </div>
+  <div class="button">
+      <input type="submit" value="Add task"/>
+  </div>
+</form>
+</div>
+<div class="footrow"><span class="foottext">You have 3 tasks</span></div>
+</body>
+</html>
