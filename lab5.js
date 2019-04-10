@@ -1,12 +1,12 @@
 /*Lab 5 java script functions*/
 
-//
-var maxOfTwo= function maxOfTwoNumber(x,y){
+
+ function maxOfTwoNumber(x,y){
    return x > y? x:y;
 };
 
 //test function
-let result= function myFunctionTest(x,y){
+ function myFunctionTest(x,y){
     if(x===y){
         return "TEST SUCCEEDED";
     }
@@ -40,11 +40,9 @@ let maxOfThree= function maxOfThreeNumber(num1,num2,num3){
 
 };
 
-console.log("Expected output of maxOfThreeNumber(20,10,40) is 40 and:" +
-    myFunctionTest(40, function(){return maxOfThreeNumber( 20,10,40);}));
 //is the character is vowel
 
-let vowel= function isVowel(c){
+ function isVowel(c){
     if(c==='e' || c==='E'  || c==='A'|| c==='a' || c==='I'|| c==='i'||
      c==='o' || c==='O' || c==='U'||c==='u'){
         return true;
@@ -119,7 +117,16 @@ const c = a.filter(function(elem,i,array){
 const d = a.reduce(function(prevValue, elem, i, array){
     return prevValue * elem;
 });
+
 window.onload=function(){
-    console.log("Expected output of max(20,10) is 10 and  " +
-        myFunctionTest(10, function(){return max( 20, 10);}));
+    console.log("Expected output of max of(20,10) is 20 and  " +
+        myFunctionTest(20, maxOfTwoNumber( 20, 10)));
+
+    console.log("Expected output of maximum of(20,10,40) is 40 and  " +
+        myFunctionTest(40, maxOfThree( 20,10,40)));
+
+    console.log("Expected output of is E a vowel? is True and " +
+        myFunctionTest(true,isVowel('E')));
+
 };
+

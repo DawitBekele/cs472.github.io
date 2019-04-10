@@ -1,0 +1,21 @@
+.legend{
+    font-weight:bold;
+    font-size:20px;
+}
+fieldset p{
+    text-align:center;
+}
+.size{
+   font-size:10px;
+}
+.decorated{
+font-weight:bold;
+color:green;
+text-decoration:underline;
+    background-image:url("images/hundred-dollar-bill.jpg");
+}
+.undecorated{
+    font-weight:normal;
+    color:black;
+    text-decoration:none;
+}
