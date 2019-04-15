@@ -36,6 +36,7 @@ function start() {
          const iterateindex=animation.length-1;//the length of the frames after changed to array
         document.getElementById("start").disabled=true;
         document.getElementById("stop").disabled=false;
+        document.getElementById("turbo").disabled=false;
 
         timer2 = setInterval(function (){
             document.getElementById("text-area").value = animation[index];
@@ -46,10 +47,12 @@ function start() {
             }
         }, 250);
 
+
         document.getElementById("turbo").onchange=function(){
+            clearInterval(timer2);
             let  turbo1=document.getElementById("turbo");
             if(turbo1.checked){
-                clearInterval(timer2);
+                //clearInterval(timer2);
                 timer1 = setInterval(function () {
                     document.getElementById("text-area").value = animation[index];
                     if (index === iterateindex) {// loop through the array
@@ -82,6 +85,7 @@ function stop(){
             document.getElementById("text-area").value = animtype;
             document.getElementById("stop").disabled=true;
             document.getElementById("start").disabled=false;
+            document.getElementById("turbo").disabled=true;
         };
     }
 //text area font sizing
